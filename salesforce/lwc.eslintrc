@@ -1,0 +1,7 @@
+{
+	"extends": ["@salesforce/eslint-config-lwc/recommended", "@locker/eslint-config-locker/recommended", "prettier"],
+	"rules": {
+		"no-console": "warn",
+		"no-await-in-loop": "off"
+	}
+}
