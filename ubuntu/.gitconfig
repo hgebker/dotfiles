@@ -1,0 +1,13 @@
+[user]
+	name = Hannes Gebker
+	email = hannes.gebker@d-velop.de
+	signingKey = C:\\Users\\hgebk\\.ssh\\id_ed25519.pub
+
+[gpg]
+	format = ssh
+	
+[commit]
+	gpgsign = true
+	
+[credential "https://git.d-velop.de"]
+	provider = generic
