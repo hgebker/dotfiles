@@ -111,6 +111,8 @@ alias zshconfig="nvim ~/.zshrc"
 alias ls="eza --icons=always"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+eval "$(zoxide init zsh)"
+
 # Start Docker daemon automatically when logging in if not running.
 RUNNING=`ps aux | grep dockerd | grep -v grep`
 if [ -z "$RUNNING" ]; then
