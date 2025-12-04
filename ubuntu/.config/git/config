@@ -1,0 +1,76 @@
+[core]
+	autocrlf = true
+	whitespace = error
+	preloadindex = true
+
+[init]
+	defaultBranch = main
+
+[status]
+	branch = true
+	showStash = true
+	submoduleSummary = true
+
+[diff]
+	context = 3
+	renames = copies
+	interHunkContext = 10
+	
+[branch]
+	sort = -committerdate
+	
+[tag]
+	sort = -taggerdate
+
+[commit]
+	template = ~/.config/git/template
+	
+[push]
+	autoSetupRemote = true
+	default = current
+	followTags = true
+
+[pull]
+	default = current
+	
+[submodule]
+	recurse = true
+	
+[rebase]
+	autoStash = true
+	missingCommitsCheck = warn
+	
+[log]
+	abbrevCommit = true
+	graphColors = blue,yellow,cyan,magenta,green,red
+	
+[pager]
+	branch = false
+	tag = false
+	
+[format]
+	pretty = format:%C(magenta)%h %C(white) %an  %ar%C(auto)  %D%n%s%n
+	
+[alias]
+	graph = log --all --graph
+	sync = "!f(){ git push && git fetch && git pull; };f"
+	
+[color "diff"]
+	meta = black bold
+	frag = magenta
+	context = white
+	whitespace = yellow reverse
+	old = red
+	
+[color "decorate"]
+	HEAD = red
+	branch = blue
+	tag = yellow
+	remoteBranch = magenta
+	
+[color "branch"]
+	current = magenta
+	local = default
+	remote = yellow
+	upstream = green
+	plain = blue
